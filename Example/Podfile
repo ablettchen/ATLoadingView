@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ATLoadingView_Example' do
+  pod 'ATLoadingView', :path => '../'
+
+  target 'ATLoadingView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
