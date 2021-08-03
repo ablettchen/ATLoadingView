@@ -48,9 +48,10 @@
     if ( !lineColor ) return;
     _lineColor = lineColor;
     _gradientLayer.colors = @[
-                              (id)[UIColor colorWithWhite:0.001 alpha:0.001].CGColor,
-                              (id)[lineColor colorWithAlphaComponent:0.25].CGColor,
-                              (id)lineColor.CGColor];
+        (id)[UIColor colorWithWhite:0.001 alpha:0.001].CGColor,
+        (id)[lineColor colorWithAlphaComponent:0.25].CGColor,
+        (id)lineColor.CGColor
+    ];
 }
 
 - (UIColor *)lineColor {
